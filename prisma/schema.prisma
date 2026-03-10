@@ -1,0 +1,31 @@
+// This is your Prisma schema file
+// Learn more: https://pris.ly/d/prisma-schema
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+        
+
+model Feedback {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  subject   String
+  message   String
+  emoji     String?
+  rating    Int?     // 1-5 star rating
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Optional: track source / page
+  source    String?  @default("portfolio")
+  
+  @@map("feedback")
+}
