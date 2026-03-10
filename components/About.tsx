@@ -36,7 +36,7 @@ export default function About() {
               <p>Fluent in <strong style={{ color: "var(--fg)" }}>C++, Python, and JavaScript</strong>. My competitive programming roots give me a sharp algorithmic edge on hard problems.</p>
             </div>
             <div className="flex flex-wrap gap-3 mt-8">
-              {[["Based in","Bangalore, India"],["Timezone","IST (UTC+5:30)"],["Education","B.Tech CS, NIT"]].map(([l,v]) => (
+              {[["Based in","Bihar, India"],["Timezone","IST (UTC+5:30)"],["Education","B.Tech, IIT Dhanbad"]].map(([l,v]) => (
                 <div key={l} className="px-4 py-3 border" style={{ background: "var(--card)", borderColor: "var(--border)" }}>
                   <div className="font-mono text-[9px] tracking-widest uppercase mb-1" style={{ fontFamily: "'IBM Plex Mono', monospace", color: "var(--fg3)" }}>{l}</div>
                   <div className="font-mono text-xs" style={{ fontFamily: "'IBM Plex Mono', monospace", color: "var(--fg)" }}>{v}</div>

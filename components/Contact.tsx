@@ -72,6 +72,8 @@ export default function Contact() {
       setStatus("sent");
     } catch {
       setErrMsg("Network error. Please try again."); setStatus("error");
+    } finally {
+      setTimeout(() => setStatus("idle"), 3000);
     }
   };
 

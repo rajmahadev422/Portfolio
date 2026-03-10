@@ -52,7 +52,7 @@ export default function Hero() {
             {/* Name */}
             <h1 className={`font-display leading-[0.92] tracking-[-0.02em] mb-6 opacity-0 ${mount ? "animate-fade-up" : ""}`}
               style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(4rem,12vw,9rem)", color: "var(--fg)", animationDelay: "0.15s", animationFillMode: "forwards" }}>
-              Alex<br /><em className="grad-text not-italic">Morgan</em>
+              Mahadev<br /><em className="grad-text not-italic">Kumar</em>
             </h1>
 
             {/* Typewriter */}
@@ -88,7 +88,7 @@ export default function Hero() {
                 onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--border)"; (e.currentTarget as HTMLButtonElement).style.color = "var(--fg)"; }}>
                 Get In Touch
               </button>
-              <a href="#" className="font-mono text-[11px] tracking-widest uppercase px-8 py-3.5 border transition-all duration-200"
+              <a href="https://docs.google.com/document/d/142jwjf3SNxh4JieqOFk4od3A24jQAKky_airlFMhUWU/edit?usp=sharing" className="font-mono text-[11px] tracking-widest uppercase px-8 py-3.5 border transition-all duration-200"
                 style={{ fontFamily: "'IBM Plex Mono', monospace", borderColor: "var(--border)", color: "var(--fg3)" }}>
                 ↓ Resume
               </a>

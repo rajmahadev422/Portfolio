@@ -85,7 +85,7 @@ export default function Projects() {
           ))}
         </div>
         <div className="reveal mt-10 text-center">
-          <a href="#" className="inline-flex items-center gap-3 font-mono text-[11px] tracking-widest uppercase px-8 py-3.5 border transition-all duration-200"
+          <a href="https://github.com/rajmahadev422?tab=repositories" className="inline-flex items-center gap-3 font-mono text-[11px] tracking-widest uppercase px-8 py-3.5 border transition-all duration-200"
             style={{ fontFamily: "'IBM Plex Mono', monospace", borderColor: "var(--border)", color: "var(--fg3)" }}>
             All projects on GitHub →
           </a>
