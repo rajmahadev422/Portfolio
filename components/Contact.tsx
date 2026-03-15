@@ -13,9 +13,8 @@ const EMOJIS = [
 ];
 
 const SOCIALS = [
-  { label: "GitHub",     handle: "@alexmorgan-dev",  href: "#", icon: "⟨/⟩" },
-  { label: "LinkedIn",   handle: "Alex Morgan",       href: "#", icon: "in"   },
-  { label: "Twitter / X",handle: "@alexmorgan_dev",  href: "#", icon: "𝕏"    },
+  { label: "GitHub",     handle: "rajmahadev422",  href: "https://github.com/rajmahadev422/rajmahadev422/blob/2cc15ad1a624d2dd7a14030a17990bc9e478a39c/README.md", icon: "⟨/⟩" },
+  { label: "LinkedIn",   handle: "Mahadev Kumar",       href: "https://www.linkedin.com/in/mahadev-kumar-15b2ba320", icon: "in"   }
 ];
 
 const AVAILABILITY = [
@@ -83,7 +82,7 @@ export default function Contact() {
     setEmoji(""); setRating(0); setStatus("idle"); setErrMsg("");
   };
 
-  const copy = () => { navigator.clipboard.writeText("alexmorgan.dev@gmail.com"); setCopied(true); setTimeout(()=>setCopied(false),2200); };
+  const copy = () => { navigator.clipboard.writeText("rajmahadev422@gmail.com"); setCopied(true); setTimeout(()=>setCopied(false),2200); };
 
   return (
     <section id="contact" ref={sectionRef} className="relative py-28 px-6 md:px-10 border-t overflow-hidden"
@@ -267,7 +266,7 @@ export default function Contact() {
               <button onClick={copy} className="w-full flex items-center justify-between gap-3 group py-1">
                 <span className="font-mono text-sm group-hover:text-[var(--accent)] transition-colors"
                   style={{ fontFamily:"'IBM Plex Mono',monospace", color:"var(--fg)" }}>
-                  alexmorgan.dev@gmail.com
+                  rajmahadev422@gmail.com
                 </span>
                 <span className="font-mono text-[9px] transition-colors shrink-0"
                   style={{ fontFamily:"'IBM Plex Mono',monospace", color: copied ? "var(--accent)" : "var(--fg3)" }}>
@@ -275,20 +274,7 @@ export default function Contact() {
                 </span>
               </button>
             </div>
-
-            {/* DB Badge */}
-            <div className="border p-4 flex items-start gap-3"
-              style={{ background:"color-mix(in srgb,var(--accent) 6%,transparent)", borderColor:"color-mix(in srgb,var(--accent) 25%,transparent)" }}>
-              <span className="text-xl">🗄️</span>
-              <div>
-                <p className="font-mono text-[9px] tracking-widest uppercase mb-1"
-                  style={{ fontFamily:"'IBM Plex Mono',monospace", color:"var(--accent)" }}>Database Connected</p>
-                <p className="text-xs leading-relaxed" style={{ color:"var(--fg2)" }}>
-                  Messages are stored in <strong style={{ color:"var(--fg)" }}>SQLite via Prisma ORM</strong>. Switch to PostgreSQL / MySQL / Supabase by updating the <code className="font-mono" style={{ color:"var(--accent)" }}>.env</code> file.
-                </p>
-              </div>
-            </div>
-
+            
             {/* Availability */}
             <div className="border p-5" style={{ background:"var(--card)", borderColor:"var(--border)" }}>
               <p className="font-mono text-[9px] tracking-widest uppercase mb-4"
@@ -343,7 +329,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <a href="#" className="block text-center font-mono text-[11px] tracking-widest uppercase py-3.5 border transition-all duration-200"
+            <a href="https://drive.google.com/file/d/13vmP6K7SM7ObNtUgFnWEbi2vFCqwTJGj/view?usp=drive_link" className="block text-center font-mono text-[11px] tracking-widest uppercase py-3.5 border transition-all duration-200"
               style={{ fontFamily:"'IBM Plex Mono',monospace", borderColor:"var(--fg)", color:"var(--fg)" }}
               onMouseEnter={e=>{(e.currentTarget as HTMLAnchorElement).style.background="var(--fg)";(e.currentTarget as HTMLAnchorElement).style.color="var(--bg)";}}
               onMouseLeave={e=>{(e.currentTarget as HTMLAnchorElement).style.background="transparent";(e.currentTarget as HTMLAnchorElement).style.color="var(--fg)";}}>

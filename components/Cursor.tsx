@@ -31,8 +31,8 @@ export default function Cursor() {
 
   return (
     <>
-      <div ref={dot} className="cursor-dot hidden md:block" />
-      <div ref={ring} className="cursor-ring hidden md:block" />
+      <div ref={dot} className="cursor-dot block" />
+      <div ref={ring} className="cursor-ring block" />
     </>
   );
 }

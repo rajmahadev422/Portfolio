@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Morgan — Full-Stack Developer",
+  title: "Mahadev Kumar — Full-Stack Developer",
   description: "Full-Stack Developer specializing in React, Next.js, Node.js & ML.",
 };
 
