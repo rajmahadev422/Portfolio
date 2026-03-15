@@ -32,7 +32,7 @@ export default function Navbar() {
         <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="font-display text-xl tracking-tight shrink-0"
           style={{ fontFamily: "'Cormorant Garamond', serif", color: "var(--fg)" }}>
-          Alex<em className="not-italic grad-text"> Morgan</em>
+          Mahadev<em className="not-italic grad-text"> Kumar</em>
         </button>
 
         {/* Desktop links */}
