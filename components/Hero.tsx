@@ -17,7 +17,7 @@ export default function Hero() {
       else if (!del && txt.length === cur.length) setDel(true);
       else if (del && txt.length > 0) setTxt(txt.slice(0, -1));
       else { setDel(false); setRole(i => (i+1) % ROLES.length); }
-    }, del ? 35 : 72);
+    }, del ? 100 : 200);
     return () => clearTimeout(t);
   }, [txt, del, role]);
 
@@ -88,7 +88,7 @@ export default function Hero() {
                 onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--border)"; (e.currentTarget as HTMLButtonElement).style.color = "var(--fg)"; }}>
                 Get In Touch
               </button>
-              <a href="https://docs.google.com/document/d/142jwjf3SNxh4JieqOFk4od3A24jQAKky_airlFMhUWU/edit?usp=sharing" className="font-mono text-[11px] tracking-widest uppercase px-8 py-3.5 border transition-all duration-200"
+              <a href="https://drive.google.com/file/d/13vmP6K7SM7ObNtUgFnWEbi2vFCqwTJGj/view" className="font-mono text-[11px] tracking-widest uppercase px-8 py-3.5 border transition-all duration-200" target="_main"
                 style={{ fontFamily: "'IBM Plex Mono', monospace", borderColor: "var(--border)", color: "var(--fg3)" }}>
                 ↓ Resume
               </a>

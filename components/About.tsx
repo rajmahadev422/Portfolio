@@ -10,7 +10,7 @@ const CARDS = [
   },
   {
     icon: "🧠",
-    title: "ML-Integrated Apps",
+    title: "ML-Integrated Web Apps",
     desc: "Bridging web dev with machine learning — recommendations, NLP, and smart features in production.",
     color: "#2563EB",
   },

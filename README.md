@@ -155,3 +155,7 @@ npx vercel
 ```
 
 > For production, switch from SQLite to a hosted DB (Supabase / Neon / PlanetScale) and set `DATABASE_URL` in Vercel environment variables.
+
+## ⭐ Support
+
+If you like this project, please consider giving it a **star ⭐ on GitHub**.
