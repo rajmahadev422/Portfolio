@@ -66,7 +66,7 @@ const PROJECTS = [
     metrics: [
       { v: "2+", l: "Feedbacks/Day" },
     ],
-    live: "https://github.com/rajmahadev422/Portfolio.git",
+    live: "https://portfolio-tau-three-ozpwygtbtt.vercel.app/",
     github: "https://github.com/rajmahadev422/Portfolio.git",
   },
 ];
