@@ -71,11 +71,9 @@ const PROJECTS = [
   },
 ];
 
-const FILTERS = ["All", "Full Stack", "Frontend", "Backend", "ML"];
-
 export default function Projects() {
   const ref = useRef<HTMLElement>(null);
-  const [filter, setFilter] = useState("All");
+  
   useEffect(() => {
     const obs = new IntersectionObserver(
       (entries) =>
@@ -87,8 +85,6 @@ export default function Projects() {
     ref.current?.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
     return () => obs.disconnect();
   }, []);
-  const visible =
-    filter === "All" ? PROJECTS : PROJECTS.filter((p) => p.type === filter);
 
   return (
     <section
@@ -124,27 +120,11 @@ export default function Projects() {
               Projects &amp; <em className="grad-text not-italic">Work</em>
             </h2>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {FILTERS.map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className="font-mono text-[10px] tracking-widest uppercase px-4 py-2 transition-all duration-200"
-                style={{
-                  fontFamily: "'IBM Plex Mono', monospace",
-                  background: filter === f ? "var(--fg)" : "transparent",
-                  color: filter === f ? "var(--bg)" : "var(--fg3)",
-                  border: `1px solid ${filter === f ? "var(--fg)" : "var(--border)"}`,
-                }}
-              >
-                {f}
-              </button>
-            ))}
-          </div>
+         
         </div>
 
         <div className="grid lg:grid-cols-3 gap-4">
-          {visible.map((p, i) => (
+          {PROJECTS.map((p, i) => (
             <div
               key={p.id}
               className={`proj-card reveal border flex flex-col gap-4 p-6 group`}

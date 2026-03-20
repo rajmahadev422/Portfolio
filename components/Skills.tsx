@@ -39,6 +39,7 @@ const GROUPS = [
       { n: "Python", p: 85 },
       { n: "C++", p: 90 },
       { n: "PostgresSQL", p: 70 },
+      { n: "Bash", p: 60 },
     ],
     tags: ["Algorithms", "OOP", "Functional", "DSA", "Competitive Prog"],
   },
