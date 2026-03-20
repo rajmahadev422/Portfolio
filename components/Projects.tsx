@@ -59,7 +59,7 @@ const PROJECTS = [
   {
     id: "05",
     title: "Portfolio",
-    sub: "My Porfolio",
+    sub: "My Poerfolio",
     desc: "Portfolio",
     type: "Full Stack",
     stack: ["Next.js", "PostgresSQL", "Prisma", "Supabase", "Tailwindcss"],

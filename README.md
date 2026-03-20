@@ -2,7 +2,7 @@
 
 ---
 
-## ✨ What's New in v3
+## ✨ Features
 
 | Feature | Details |
 | ------- | ------- |
