@@ -31,7 +31,7 @@ const PROJECTS = [
   },
   {
     id: "03",
-    title: "Vehicle Precitorr",
+    title: "Vehicle Predictor",
     sub: "Vehicle Classification System",
     desc: "Engineered deep learning vehicle classification system using PyTorch CNN architecture. Built FastAPI server integrating pre-trained neural network model for real-time vehicle predictions. Developed responsive web interface with HTML/CSS for image upload and classification. Implemented complete ML pipeline from image preprocessing to model inference with production-ready deployment.",
     type: "ML",
